@@ -1,5 +1,6 @@
 package com.cristiang.calculadoraapp.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -8,12 +9,15 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.cristiang.calculadoraapp.FuncionesActivity
 import com.cristiang.calculadoraapp.R
+import com.cristiang.calculadoraapp.databinding.ActivityMainBinding
 import com.cristiang.calculadoraapp.model.QuoteViewModel
 
 class MainActivity : AppCompatActivity() {
 
     //declaramos variables
+    private lateinit var binding: ActivityMainBinding
     private lateinit var tvResult: TextView
     private lateinit var tvNum1: TextView
     private lateinit var tvNum2: TextView
@@ -63,6 +67,11 @@ class MainActivity : AppCompatActivity() {
 
         // Set click listener for clear button
         findViewById<Button>(R.id.btnBorrar).setOnClickListener { clear() }
+
+        // Set click listener for clear button
+        findViewById<Button>(R.id.btnFrase).setOnClickListener {
+            startActivity(Intent(this, FuncionesActivity::class.java))
+        }
     }
 
     private fun appendNumber(number: String) {

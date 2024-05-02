@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_num1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUno"
+        android:layout_width="284dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:text="Bienvenido a CalculadorApp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FF9800"
+        android:text="C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="268dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:layout_width="355dp"
+        android:layout_height="418dp"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="87dp">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="+"
+                android:textColorLink="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="-"
+                android:textColorLink="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnMult"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="*"
+                android:textColorLink="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#727272"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnPunto"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="."
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="="
+                android:textColorLink="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnDividir"
+                android:layout_width="88dp"
+                android:layout_height="88dp"
+                android:backgroundTint="#61D8D8D8"
+                android:text="/"
+                android:textColorLink="#FFFFFF" />
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

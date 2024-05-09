@@ -5,15 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".FuncionesActivity">
+    android:background="#451E1E"
+    tools:context=".ui.view.FrasesActivity">
 
     <TextView
-        android:Id="@+id/tvQuote"
-        android:id="@+id/textView"
+        android:id="@+id/tvQuote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="TextView"
         android:gravity="center"
         android:padding="16dp"
         android:textColor="@color/white"
@@ -21,15 +19,16 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485"
+        tools:text="TextView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="192dp"
-        android:Id="@+id/tvAuthor"
         android:gravity="center"
         android:padding="16dp"
         android:textColor="@color/white"
@@ -37,7 +36,18 @@
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.485"
         tools:text="TextView" />
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

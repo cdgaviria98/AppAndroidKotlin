@@ -1,21 +1,16 @@
-package com.cristiang.calculadoraapp
+package com.example.mvvm
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.cristiang.calculadoraapp.databinding.ActivityFuncionesBinding
 
-class FuncionesActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityFuncionesBinding
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-
-        binding = ActivityFuncionesBinding.inflate(layoutInflater)
-
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
     }
 }

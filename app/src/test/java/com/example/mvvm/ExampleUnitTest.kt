@@ -1,4 +1,4 @@
-package com.cristiang.calculadoraapp
+package com.example.mvvm
 
 import org.junit.Test
 

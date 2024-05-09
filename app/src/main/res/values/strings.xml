@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">CalculadoraApp</string>
-    <string name="bienvenido_a_calculadorapp">Bienvenido a CalculadorApp</string>
+    <string name="app_name">MVVM</string>
 </resources>

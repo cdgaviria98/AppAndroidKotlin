@@ -1,14 +1,16 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
-    namespace = "com.example.mvvm"
+    namespace = "com.cristhian.apprecordar"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mvvm"
+        applicationId = "com.cristhian.apprecordar"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -36,41 +38,41 @@ android {
     buildFeatures{
         viewBinding = true
     }
+
 }
 
 dependencies {
-
-    val fragment_version = "1.3.2"
     val viewmodel_version = "2.3.1"
-    val livedata_version = "2.3.1"
-    val activity_version = "1.2.2"
-
+    val livedata_version  = "2.3.1"
+    val fragment_version  = "1.3.2"
+    val activity_version  = "1.2.2"
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-
-    //kotlin language implementation
-    implementation("androidx.fragment:fragment-ktx:$fragment_version")
-
-    //View model
+    // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$viewmodel_version")
-
-    //liveData
+    // LiveData
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livedata_version")
-
-    //activity
+    // Fragment
+    implementation("androidx.fragment:fragment-ktx:$fragment_version")
+    // Activity
     implementation("androidx.activity:activity-ktx:$activity_version")
-
-    //Retrofit
+    // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-
-    //Corrutinas
+    // Corrutinas
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.6")
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+kapt {
+    correctErrorTypes = true
 }

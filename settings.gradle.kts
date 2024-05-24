@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MVVM"
+rootProject.name = "AppRecordar"
 include(":app")
  
